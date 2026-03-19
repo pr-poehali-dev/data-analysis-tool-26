@@ -6,7 +6,7 @@ const PhotographyBanner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const texts = ["БИЗНЕС.", "БРЕНДЫ."]
+  const texts = ["ПРОДАЁМ.", "ЧИНИМ.", "СДАЁМ."]
 
   useEffect(() => {
     const typeSpeed = isDeleting ? 40 : 100
@@ -828,7 +828,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="left-part">
               <h1>
                 <span className="d-flex">
-                  {["С", "О", "З", "Д", "А", "Ё", "М"].map((char, index) => (
+                  {["С", "А", "Д", "Т", "Е", "Х", "Н", "И", "К", "У"].map((char, index) => (
                     <span key={index} className="char tracking-tighter" style={{ animationDelay: `${index * 0.08}s` }}>
                       {char === " " ? "\u00A0" : char}
                     </span>
@@ -837,10 +837,10 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Помогаем предпринимателям запускать цифровые продукты быстрее с помощью современных технологий
+                Газонокосилки, мотоблоки, бензопилы — продажа, прокат и ремонт в Малоярославецком районе. Свой сервис, честные цены.
               </p>
-              <a href="#cta" className="book-link">
-                <span className="linktext tracking-tighter text-3xl">Начать проект</span>
+              <a href="tel:+74843123456" className="book-link">
+                <span className="linktext tracking-tighter text-3xl">Позвонить нам</span>
                 <span className="arrow">
                   <span></span>
                 </span>
@@ -888,42 +888,42 @@ const PhotographyBanner: React.FC = () => {
           <section className="features-section">
             <div className="features-container">
               <div className="features-content">
-                <h2>Почему выбирают нас?</h2>
+                <h2>Почему <span className="highlight">Садовый Профи</span>?</h2>
               </div>
               <ul className="features-list">
                 <li className="feature-item">
                   <div className="feature-icon">01</div>
                   <div className="feature-text">
-                    <h3>Опытная команда</h3>
+                    <h3>Свой магазин</h3>
                     <p className="font-light tracking-wider">
-                      Более 10 лет опыта в разработке цифровых продуктов для бизнеса любого масштаба
+                      Техника и расходники всегда в наличии. Накладные цены — от 25% ниже рынка
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">02</div>
                   <div className="feature-text">
-                    <h3>Современные технологии</h3>
+                    <h3>Прокат выгоднее покупки</h3>
                     <p className="tracking-wider">
-                      Используем передовые инструменты и фреймворки для создания быстрых и надёжных решений
+                      Мотоблоки, снегоуборщики, бензопилы. Окупаемость за 3–5 прокатов
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">03</div>
                   <div className="feature-text">
-                    <h3>Индивидуальный подход</h3>
+                    <h3>Единственный сервис в районе</h3>
                     <p className="tracking-wider">
-                      Каждый проект уникален — мы адаптируем решения под ваши конкретные задачи и цели
+                      Специализированный ремонт садовой техники. Чиним любые поломки — не только то, что продали
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">04</div>
                   <div className="feature-text">
-                    <h3>Поддержка 24/7</h3>
+                    <h3>Партнёрство 50/50</h3>
                     <p className="tracking-wider">
-                      Обеспечиваем техническую поддержку и сопровождение на всех этапах работы
+                      Два собственника: коммерция + технадзор. Андрей и Станислав лично отвечают за результат
                     </p>
                   </div>
                 </li>
@@ -933,77 +933,77 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="testimonials-section">
             <div className="testimonials-container">
-              <h2 className="testimonials-title">Отзывы клиентов</h2>
+              <h2 className="testimonials-title">Нам доверяют</h2>
               <div className="testimonials-marquee">
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Взял в прокат мотоблок на три дня — за сезон сэкономил на огороде больше 15 тысяч. Ребята объяснили как пользоваться, техника в отличном состоянии."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">ВП</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Василий П.</h4>
+                      <p>Садовод, СНТ «Берёзка»</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Принесла газонокосилку — другие говорили что не починить. Станислав разобрался за два дня, цена адекватная. Теперь только к ним."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">НК</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Наталья К.</h4>
+                      <p>Жительница Малоярославца</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Купил триммер — дали скидку 10% по акции. Расходники тоже дешевле, чем в городе. Удобно что всё в одном месте — купил, поломалось, починили."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">АФ</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Андрей Ф.</h4>
+                      <p>Фермер, Малоярославецкий р-н</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "Взял в прокат мотоблок на три дня — за сезон сэкономил на огороде больше 15 тысяч. Ребята объяснили как пользоваться, техника в отличном состоянии."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">АС</div>
+                    <div className="author-avatar">ВП</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Василий П.</h4>
+                      <p>Садовод, СНТ «Берёзка»</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Принесла газонокосилку — другие говорили что не починить. Станислав разобрался за два дня, цена адекватная. Теперь только к ним."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">НК</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Наталья К.</h4>
+                      <p>Жительница Малоярославца</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Купил триммер — дали скидку 10% по акции. Расходники тоже дешевле, чем в городе. Удобно что всё в одном месте — купил, поломалось, починили."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">АФ</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Андрей Ф.</h4>
+                      <p>Фермер, Малоярославецкий р-н</p>
                     </div>
                   </div>
                 </div>
@@ -1013,16 +1013,16 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="cta-section" id="cta">
             <div className="cta-container">
-              <h2 className="cta-title text-center">Готовы начать?</h2>
+              <h2 className="cta-title text-center">Звоните!</h2>
               <p className="cta-subtitle">
-                Присоединяйтесь к сотням компаний, которые уже трансформировали свой бизнес. Ваш путь к успеху начинается здесь.
+                Работаем ежедневно с 9:00 до 20:00. Д. Терентьево, Новый проезд, 2 — 10 минут от центра Малоярославца. Удобный подъезд, парковка.
               </p>
               <div className="cta-buttons">
-                <a href="#" className="cta-button">
-                  Обсудить проект
+                <a href="tel:+74843123456" className="cta-button">
+                  +7 (48431) 2-34-56
                 </a>
-                <a href="#" className="cta-button secondary">
-                  Посмотреть кейсы
+                <a href="https://yandex.ru/maps/?text=Терентьево+Новый+проезд+2" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
+                  Проложить маршрут
                 </a>
               </div>
             </div>
